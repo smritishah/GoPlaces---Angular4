@@ -1,0 +1,42 @@
+<div class="conatiner list-group table-responsive">
+  <table class="table table-hover table-striped" id="table" *ngIf="data">
+    <thead class="table-head">
+      <tr align="cenetr">
+        <th class = "col-xs-4" align="center">Icon</th>
+        <th class = "col-xs-8" align="center">Name</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr *ngFor="let d of data" (click)="showMore(d.name)">
+        <td align="center"><img id="icon" src="{{d.icon}}" alt="Image" class="Image"></td>
+        <td>
+          <ul class="list">
+            <li div="icons">
+              <ul class="sym">
+                <li>         
+                  <button>           
+                    <span class="glyphicon glyphicon-floppy-disk"></span>   
+                  </button>                 
+                </li>
+                <li>
+                  <button>
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </button>
+                </li>
+                <li>
+                  <button>
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </button>
+                </li>
+              </ul>
+            </li>
+            <li>{{d.name}}</li>
+            <li>
+              <span>Rating: </span>{{d.rating}}
+            </li>
+          </ul>
+        </td>                    
+      </tr>                   
+    </tbody>                
+  </table>
+</div>

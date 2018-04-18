@@ -1,0 +1,20 @@
+#table {
+    margin-left: 120px;
+    width: 850px;
+    font-size: 16px;
+    font: 'Times New Roman';
+    height: 200px;
+    text-rendering: optimizeLegibility;
+}
+ul li {
+    list-style-type: none;
+}
+ul.sym li {
+    display: inline;
+    float: right;
+    padding-left: 5px;
+}
+button {
+    border: none;
+    background: none;
+}

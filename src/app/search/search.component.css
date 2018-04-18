@@ -1,0 +1,37 @@
+#sbar {
+    padding-top: 50px;
+    margin-left: 80px;
+    margin-right: 80px;
+    /* background-image: url("./../../assets/images/CH1.jpg"); */
+    background-color: #A76A6A;
+    /* background-color:linear-gradient(red, yellow); */
+    height:400px;
+}
+#form1 {
+    padding-top: 120px;
+}
+#form1, #form2 {
+    
+}
+#icon {
+    width:50px;
+    height:50px;
+}
+ul.res {
+    /* text-decoration-style: none; */
+    list-style-type: none;
+}
+ul.res li {
+    padding-top: 5px;
+}
+#entity img {
+    height: 250px;
+    width: 275px;
+    border-radius: 50%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+}
+#entity img:hover {
+    cursor: pointer;
+}

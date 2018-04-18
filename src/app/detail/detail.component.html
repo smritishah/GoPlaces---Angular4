@@ -1,0 +1,29 @@
+<br><br>
+<div class="container list-group">
+    <div class="col-sm-6">
+            <img src="{{details.icon}}" class="Image"/>
+    </div>
+    <div *ngIf="details">
+        <div class="col-sm-6">
+        <a class="list-group-item">
+            <h4> Name: </h4>
+            <p>{{details.name}}</p>
+        </a>
+        <a class="list-group-item">
+            <h4 >User Reviews and Rating:</h4>
+            <p>{{details.rating}}</p>
+        </a>
+        <a class="list-group-item">
+            <h4>Location:</h4>
+            <p >{{details.formatted_address}}</p>         
+        </a>
+        </div>
+        <div class="col-sm-5"></div>
+        <div class="col-sm-1">
+        <button class="btn btn-warning" id="saveBtn">Save</button>
+        </div>
+        <div class="col-sm-3">
+        <button class="btn btn-info" id="editBtn">Edit</button>
+        </div>
+    </div>
+</div>
